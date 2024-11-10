@@ -15,9 +15,10 @@
     margin: 0px;
     padding: 0px;    
 }
+
 html,body {
     min-height: 100vh;
-    background-color: daark;
+    background-color: dark;
     font-family: var(--font1);
 }
 
@@ -34,8 +35,9 @@ header > h1 {
     font-variant: small-caps;
 }
    
-headeer > p {
+header > p {
     padding-bottom: 50px;
+    font-size: 20px;
 }
 
 header a, footer a {
@@ -58,19 +60,40 @@ section {
 
 }
 
+section > p {
+    padding: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
 }
 
 section.imagem{
-    background-color: rgb(51, 51, 51);
+    background-color: rgba(62, 62, 62, 0.404);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.766);
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
 section.imagem > p {
-    width: 400px;
-    background-color: rbga(0,0,0,0.253);
+    display: inline-block ;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.218);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+ 
+}
+
+section#img02 {
+background-image: url(../imagens/background002.jpg);
+
 }
 
 footer{
